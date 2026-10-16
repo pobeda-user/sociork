@@ -33,14 +33,10 @@ bucket-site/ — Web-версия (PWA), загружается в облачн�
 
 ```cmd
 cd server_py
-start_server.bat        # только сервер (http://127.0.0.1:9001)
+start_server.bat        # только сервер 
 start_all.bat           # сервер + публичный туннель
 ```
 
-Сервер слушает порт `9001`:
-- с этого же компа: `http://127.0.0.1:9001/`
-- с телефона в той же Wi-Fi: `http://10.0.24.89:9001/`
-- публично (через туннель): `https://atitovserv1.tailf343af.ts.net/`
 
 ## Сборка Android-приложения
 
@@ -51,7 +47,7 @@ start_all.bat           # сервер + публичный туннель
    ```
 3. Соберите:
    ```cmd
-   set "JAVA_HOME=C:\Users\a.titov\Program files\android studio\jbr" && gradlew.bat assembleRelease
+   set "JAVA_HOME=\Program files\android studio\jbr" && gradlew.bat assembleRelease
    ```
    Результат: `app/build/outputs/apk/release/app-release.apk`
 
